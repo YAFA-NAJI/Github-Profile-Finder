@@ -4,23 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Github User Search</title>
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
     <div class="container">
         <div class="input_wrapper">
-            <input type="text" placeholder="Enter github user name" class="input_user">
+            <input type="text" placeholder="Enter github user name" class="input_user" value="">
             <div class="btn_submit">Search User</div>
         </div>
         <div class="row">
             <div class="user_info">
                 <div class="user_img">
-                    <img src="images/logo.jpg">
+                    <img src="images/logo.jpg" alt="GitHub user">
                 </div>
                 <div class="user_name">
                     <h3>Login Name</h3>
@@ -29,32 +28,19 @@
                 <div class="follow">
                     <div class="item followers_">
                         <p>Followers</p>
-                        <span>3</span>
+                        <span>0</span>
                     </div>
                     <div class="item follow_">
-                        <p>Follow</p>
-                        <span>1</span>
+                        <p>Following</p>
+                        <span>0</span>
                     </div>
                 </div>
             </div>
             <div class="repo">
                 <h1>Repos</h1>
                 <div class="repo_details">
-                    <div class="item_">
-                        <div class="repo_name">YAFA NAJI</div>
-                        <div class="repo_details_">
-                            <div class="info_ star">
-                                <i class="fa fa-star-o"></i>10
-                            </div>
-                            <div class="info_ fork">
-                                <p><i class="fa fa-code-fork"></i>30</p>
-                            </div>
-                            <div class="info_ size">
-                                <p><i class="fa fa-file"></i>3000kb</p>
-                            </div>
-                        </div>
-                    </div>
-
+                    <!-- سيتم ملؤها ديناميكيًا بواسطة JavaScript -->
+                    <div class="loading">Loading repositories...</div>
                 </div>
             </div>
         </div>
