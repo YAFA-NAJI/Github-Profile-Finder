@@ -4,6 +4,12 @@ A simple web application to search for GitHub users and display their profile in
 
 ![GitHub User Search Preview](images/github_logo.png) 
 
+# GitHub Profile Finder
+
+This is a simple web app that allows you to search for GitHub users and view their profile details and repositories.
+
+🔗 [Live Demo](https://github-profile-finder-ruddy.vercel.app/)
+
 ## Features ✨
 - Search for any GitHub user by username
 - Display user profile picture, name, followers, and following count
