@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   body {
@@ -168,6 +168,10 @@
   .repo .repo_details .item_ .repo_name {
     font-size: 12px;
     margin-bottom: 10px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+
   }
   
   .repo .repo_details .item_ .repo_details_ {
@@ -181,6 +185,16 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .repo .repo_details .item_ .repo_name a {
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.repo .repo_details .item_ .repo_name a:hover {
+    color: #333;
+    text-decoration: underline;
+}
   
   .repo .repo_details .item_ .repo_details_ .info_ {
     font-size: 12px;
@@ -254,4 +268,63 @@
     cursor: pointer;
     text-transform: uppercase;
   }
-  /*# sourceMappingURL=style.css.map */
+  .loading, .error {
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #586069;
+    background: #f6f8fa;
+    border-radius: 8px;
+  }
+  
+  .error {
+    color: #cb2431;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      margin-top: 50px;
+      padding: 0 10px;
+    }
+  
+    .container .row {
+      flex-direction: column;
+      width: 100%;
+      box-shadow: none;
+    }
+  
+    .container .row .user_info,
+    .container .row .repo {
+      width: 100%;
+      border-radius: 0;
+      padding: 20px;
+    }
+  
+    .repo .repo_details .item_ {
+      width: 100%;
+    }
+  
+    .input_wrapper {
+      width: 100%;
+    }
+  
+    .input_wrapper .btn_submit {
+      width: 120px;
+      font-size: 12px;
+    }
+  
+    .repo h1 {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .user_name h1 {
+      font-size: 20px;
+    }
+  
+    .follow {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
